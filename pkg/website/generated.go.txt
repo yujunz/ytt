@@ -27,28 +27,10 @@ for file in data.list():
 end
 
 examples = [
-  {"name": "example-plain-yaml"},
-  {"name": "example-datatypes"},
-  {"name": "example-variable"},
-  {"name": "example-if"},
-  {"name": "example-for"},
-  {"name": "example-function"},
-  {"name": "example-load"},
-  {"name": "example-load-ytt-library"},
-  {"name": "example-load-custom-library"},
-  {"name": "example-assert"},
-  {"name": "example-load-data-values"},
-  {"name": "example-load-data-files"},
-  {"name": "example-text-template"},
-  {"name": "example-replace"},
-  {"name": "example-overlay"},
-  {"name": "example-overlay-files"},
-  {"name": "example-multiple-data-values"},
-  {"name": "example-ytt-library-module"},
-  {"name": "example-k8s-ingress"},
-  {"name": "example-k8s-ingress-with-defs"},
-  {"name": "example-k8s-helm-ish"},
-  {"name": "example-demo"},
+  {"name": "example-hello-world"},
+  {"name": "example-extract-to-variables"},
+  {"name": "example-extract-yaml-fragments"},
+  {"name": "example-calc-in-functions"},
 ]
 
 for example in examples:

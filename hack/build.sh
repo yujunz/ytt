@@ -24,9 +24,8 @@ build_values_path="../../${BUILD_VALUES:-./hack/build-values-default.yml}"
 	cd pkg/website
 	./../../ytt \
 		-f . \
-		-f ../../examples/playground \
+		-f ../../examples/getting-started \
 		-f $build_values_path \
-		--file-mark 'alt-example**/*:type=data' \
 		--file-mark 'example**/*:type=data' \
 		--file-mark 'generated.go.txt:exclusive-for-output=true' \
 		--output-directory ../../tmp/
