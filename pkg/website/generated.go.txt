@@ -31,6 +31,7 @@ examples = [
   {"name": "example-extract-to-variables"},
   {"name": "example-extract-yaml-fragments"},
   {"name": "example-calc-in-functions"},
+  {"name": "example-data-values"},
 ]
 
 for example in examples:

@@ -8,7 +8,7 @@ extract_common_values_into_variables:
 
   Study "deployment.yml"...
 
-  at the top — this "comment" escapes into ytt programming
+  at the top — "#@" escapes into ytt programming
     language — Starlark. Starlark is very much like Python.
     Here, we define two local variables, "app_name" and
     "version".
@@ -16,7 +16,7 @@ extract_common_values_into_variables:
 
   within the YAML document - to set the value of a given
     YAML node to be that of the variable, just include the
-    "comment" of Starlark code that references that
+    "#@" followed by Starlark code that references that
     variable.
 
 ---

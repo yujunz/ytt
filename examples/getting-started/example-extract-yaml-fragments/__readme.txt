@@ -16,15 +16,6 @@ extract_yaml_fragments:
       "withVersion" is "True". (notice that the Starlark
       boolean literal for truthy is capital-T, True).
 
-  within the YAML document - we set the value to the
-    various nodes that want for the extracted YAML fragment.
-    - you can optionally name parameters when
-      invoking a function in Starlark. In this case, makes
-      the code more readable.
-    - functions can declare default arguments as well. Here,
-      calling "labels()" with no argument omits the
-      "version" hunk.
-
 ---
 its_still_yaml:
 
@@ -50,7 +41,7 @@ its_still_yaml:
      the string from "app_name" and the node
      "app.kubernetes.io/version".
 
-  2. to make this even clearer, remove the ""#@ app_name"
+  2. to make this even clearer, remove the "#@ app_name"
      from line 6.
      Note how the various labels look in the output, now.
 
